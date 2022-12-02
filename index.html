@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Racial Equity KB Template</title>
+  <link rel="stylesheet" href="./style-and-script-files/style.css">
+</head>
+<body>
+    <h1>
+        Draft: Racial Equity Resources Dictionary KB
+    </h1>
+    <div id="resource-sorter">
+        <fieldset>
+            <legend>Search by stage in project or type of support:</legend>
+            <div>
+              <input type="radio" id="stage" name="search-type" value="stage" onchange="updateSearchType()">
+              <label for="stage">Stage of project</label>
+            </div>
+            <div>
+              <input type="radio" id="type" name="search-type" value="type" onchange="updateSearchType()" checked>
+              <label for="type">Type of support</label>
+            </div>
+        </fieldset>
+        <div>
+            <div class="dropdowns" id="timing-filter"  style="display: none;">
+                <label for="timing">Stage of project life cycle:</label>
+                <select name="timing" id="timing">
+                <option value="search all">Search all</option>    
+                <option value="starting">Starting a project</option>
+                <option value="project planning">Project planning</option>
+                <option value="study design">Study design</option>
+                <option value="collection and analysis">Data collection and analysis</option>
+                <option value="analysis">Data analysis</option>
+                <option value="reporting">Data reporting and sharing</option>
+                </select>
+            </div>
+            <div id="task-filter">
+                <div class="dropdowns">
+                    <label for="task">Type of TA support:</label>
+                    <select name="task" id="task">
+                    <option value="search all">Search all</option>
+                    <option value="project management">Project Management</option>
+                    <option value="research support">Research support</option>
+                    <option value="training">Training</option>
+                    <option value="matchmaking">Matchmaking</option>
+                    </select>
+                </div>
+                <div class="dropdowns">
+                    <label for="subtask">Specify a subtask?</label>
+                    <select name="subtask" id="subtask">
+                        <option value="N/a">N/a</option>
+                    </select>
+                </div>
+            </div>
+            <div class="dropdowns">
+                <button name="filter" id="filter" onclick="updateResources()">Filter Resources</button>
+            </div>
+        </div>
+    </div>
+    <div id="summary">
+        <h2 id="exec-summary-heading"></h2>
+        <div id="motivation"">
+            <h3>Motivation:</h3>
+            <div id="motivation-content"></div>
+        </div>
+        <div id="jpals-role">
+            <h3>J-PAL's Role:</h3>
+            <div id="jpals-role-content"></div>
+        </div>
+        <div id="other-stakeholders">
+            <h3>Other Stakeholders:</h3>
+            <div id="stakeholders-content"></div>
+        </div>
+        <div id="key-definitions">
+            <h3>Key Definitions:</h3> 
+            <div id="definitions-content"></div>
+        </div>
+    </div>
+    <div id="tool-warehouse">
+        <h2 id="resources-heading"></h2>
+        <div id="resource-bin"></div>
+    </div>
+
+
+    <script type="text/javascript" src="style-and-script-files/json-files/summary_motivation.js"></script>
+    <script type="text/javascript" src="style-and-script-files/json-files/summary_definitions.js"></script>
+    <script type="text/javascript" src="style-and-script-files/json-files/summary_JPAL_role.js"></script>
+    <script type="text/javascript" src="style-and-script-files/json-files/summary_other_stakeholders.js"></script>
+    <script type="text/javascript" src="style-and-script-files/json-files/subtasks.js"></script>
+    <script type="text/javascript" src="style-and-script-files/json-files/RE_resources_list.js"></script>
+    <script type="text/javascript" src="style-and-script-files/index.js"></script>
+</body>
+</html>

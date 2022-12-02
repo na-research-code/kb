@@ -1,0 +1,52 @@
+body {
+    padding: .5rem;
+}
+
+div {
+    padding: .1rem 0rem;
+}
+
+h1 { 
+    text-align: center;
+    color: #e35925;
+}
+
+h2{
+    color: #319f90;
+    margin: 1rem 0rem 0rem;
+}
+
+h3 {
+    margin: .5rem 0rem .1rem;
+}
+
+#resource-sorter {
+    column-count: 2;
+}
+
+.dropdowns {
+    padding: .5rem;
+}
+
+.stakeholder {
+    padding: .25rem 0rem;
+}
+
+#summary, #tool-warehouse {
+    display: none;
+}
+
+.resource-container, .definition-container {
+    margin: .5rem;
+    padding: .5rem;
+    background-color: #efefef;
+}
+
+.resource-container:hover, .definition-container:hover {
+    border-color: #319f90;
+    border-style: inset;
+}
+
+#resource-bin, .detailBin{
+    padding: 0;
+}
